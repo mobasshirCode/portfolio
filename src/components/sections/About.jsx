@@ -15,11 +15,11 @@ const About = () => {
         "C++ (Basics)"
     ];
   return (
-    <section id='about' className='min-h-screen flex items-center justify-center py-20'>
+    <section id='about' className='min-h-screen flex items-center justify-center py-20 px-2'>
       <RevealOnScroll>
       <div className='max-w-3xl mx-auto py-4'>
         <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to to-cyan-400 bg-clip-text text-transparent text-center'>About Me</h2>
-        <div className='rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all'>
+        <div className='rounded-xl px-6 py-8 border-white/10 border hover:-translate-y-1 transition-all'>
             <p className='text-gray-300 mb-6 text-center'>
                 Passionate developer with expertise in building scalable web applications and creating innovative solutions.
             </p>
@@ -42,11 +42,11 @@ const About = () => {
                 <h3 className='font-bold text-xl mb-4'>Education</h3>
                 <ul className='list-disc list-inside text-md text-gray-300 space-y-2'>
                     <li>
-                        <strong> B.Tech in Computer Science (8.7 CGPA) </strong> <br /> GGSIP University (2021-2025)
+                        <strong className='font-bold'> B.Tech in Computer Science (8.7 CGPA) </strong> <br /> GGSIP University (2021-2025)
                         <br /> Delhi Institute of Technology and Management (DITM)
                     </li>
                     <li>
-                        <strong> Class XIIth (PCM with CS) </strong> <br /> Aligarh Muslim University (2018-2020)
+                        <strong className='font-bold'> Class XIIth (PCM with CS) </strong> <br /> Aligarh Muslim University (2018-2020)
                         
                     </li>
                 </ul>
@@ -55,13 +55,13 @@ const About = () => {
                 <h3 className='font-bold text-xl mb-4'>Work Experience</h3>
                 <div className='space-y-4 text-gray-300'>
                     <div>
-                        <h4 className='font-semibold'>
+                        <h4 className='font-bold'>
                             Web Development Intern <br /> insiderOne - (Dec 2023 - Jan 2024)
                         </h4>
                         <p className='text-md'>Assisted in replicating their wordpress website using React Js.</p>
                     </div>
                     <div>
-                        <h4 className='font-semibold'>
+                        <h4 className='font-bold'>
                             Web Development Intern <br /> Ideamotive - (Feb 2024 - Apr 2024)
                         </h4>
                         <p className='text-md'>Collaborated in the design and implementation of responsive user interfaces using HTML, CSS, and JavaScript.</p>

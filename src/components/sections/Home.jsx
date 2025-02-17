@@ -6,7 +6,7 @@ const Home = () => {
     <section id='home' className='min-h-screen flex items-center justify-center relative'>
      <RevealOnScroll>
       <div>
-        <h1 className='text-5xl md:text-7xl mb-6 font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent'>
+        <h1 className='text-3xl text-center md:text-7xl mb-6 font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent'>
             Hi, I'm Mobasshir Rahman
         </h1>
         <p className='text-lg text-gray-400 max-w-lg mx-auto mb-8 text-center'>
