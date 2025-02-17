@@ -10,11 +10,16 @@ const Contact = () => {
     message: "",
   });
 
+  
+const PUBLIC_KEY = "sLnuXolpeVKjGDKdv";
+const SERVICE_ID = "service_4mdf5nv";
+const TEMPLATE_ID = "template_y2itwqa";
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
         alert("Message Sent!");
         setFormData({name:"",
@@ -30,11 +35,11 @@ const Contact = () => {
       className="min-h-screen flex justify-center items.center py-20"
     >
       <RevealOnScroll>
-        <div className="px-4 w-150">
+        <div className="px-6 min-w-screen md:min-w-155">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to to-cyan-400 bg-clip-text text-transparent text-center">
             Get in Touch
           </h2>
-          <form className="space-y-6" onSubmit={handleSubmit}>
+          <form className="space-y-6 " onSubmit={handleSubmit}>
             <div className="relative">
               <input
                 type="text"
